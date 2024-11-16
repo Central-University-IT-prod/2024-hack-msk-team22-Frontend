@@ -1,0 +1,61 @@
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.input label {
+    font-weight: 600;
+}
+
+.input1 input {
+    border-color: #000000;
+    border-radius: 10px;
+    height: 35px;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-right: 2vw;
+
+}
+
+.input2 input {
+    border-color: #000000;
+    border-radius: 10px;
+    height: 35px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.loginButton {
+    background-color: #FFB153;
+    max-width: 194px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.buttons p {
+    margin: 5px 0;
+    color: #615858;
+}
+
+.buttons span {
+    cursor: pointer;
+}
+
+.inRow{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px 25px 0px;
+}
+
+.input1 label{
+    margin: 10px;
+}
+
+.input2 label{
+    margin: 10px;
+}

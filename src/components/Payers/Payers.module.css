@@ -1,0 +1,111 @@
+
+.paymentsContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 300px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.paidButton {
+    padding: 4px;
+    background: var(--search-bar-color);
+    border-radius: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.paymentUser {
+    display: flex;
+    background-color: var(--search-bar-color);
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.paymentUser ul {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.paymentUsers {
+    max-height: 400px;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 0 10px 10px 10px;
+}
+
+.payeeName {
+    cursor: pointer;
+}
+
+.paid {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.overlay {
+    position: fixed; /* Фиксирует элемент на весь экран */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+    display: flex;
+    justify-content: center; /* Центрируем .accept по горизонтали */
+    align-items: center; /* Центрируем .accept по вертикали */
+    z-index: 999; /* Убедитесь, что это будет поверх остального контента */
+}
+
+.accept {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Выстраиваем элементы вертикально */
+    background-color: var(--search-bar-color); /* Цвет фона для блока */
+    padding: 30px 40px; /* Отступы для блока */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Тень вокруг блока */
+    max-width: 400px; /* Ограничение ширины блока */
+    text-align: center; /* Выравнивание текста по центру */
+    color: #fff; /* Белый цвет текста */
+    font-size: 18px; /* Размер шрифта */
+}
+
+.yes, .no {
+    display: inline-block; /* Выстраиваем кнопки рядом */
+    background-color: #4CAF50; /* Зеленый цвет для кнопки "Да" */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 10px 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.yes:hover {
+    background-color: #45a049; /* Более темный зеленый при наведении */
+}
+
+.no {
+    background-color: #f44336; /* Красный цвет для кнопки "Нет" */
+}
+
+.no:hover {
+    background-color: #e53935; /* Более темный красный при наведении */
+}
+
+.yes:active, .no:active {
+    transform: scale(0.98); /* Легкое уменьшение кнопки при клике */
+}
+

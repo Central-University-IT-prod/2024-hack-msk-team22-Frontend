@@ -1,0 +1,48 @@
+.event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    overflow: auto;
+    height: 100svh;
+}
+
+.event img {
+    border-radius: 100px;
+}
+
+.event span {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.payers {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.splits {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 632px) {
+    .payers {
+        flex-direction: column;
+    }
+}
